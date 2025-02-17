@@ -6,14 +6,15 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(menuName = "Scriptable object/Item")]
 public class Item : ScriptableObject {
     public ItemType type;
-    public Vector2Int range = new Vector2Int(5, 4);
-
+    public int points;
     [Header("Both")]
     public Sprite image;
+
+    public string Food;
 
 }
 
 public enum ItemType
 {
-    Protein, Vegetable, Snack, Drink, Dairy, Fruit
+    Protein, Vegetable, Snack, Drink, Dairy, Fruit, Grains
 }
